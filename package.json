@@ -1,0 +1,23 @@
+{
+  "name": "smartpc",
+  "description": "Control your PC from Google Assistant",
+  "dependencies": {
+    "actions-on-google": "^2.6.0",
+    "firebase": "^5.9.0",
+    "firebase-admin": "^7.1.1",
+    "lock-system": "git+ssh://git@github.com:Fleker/lock-system.git#256d491",
+    "readline-promise": "^1.0.4",
+    "sleep-mode": "^1.1.0",
+    "systeminformation": "^4.1.1"
+  },
+  "devDependencies": {
+    "firebase-tools": "^6.5.0"
+  },
+  "scripts": {
+    "build": "cd functions && yarn build",
+    "init:pc": "node init-pc.js",
+    "init:firebase": "firebase use --project",
+    "deploy": "firebase deploy --only functions",
+    "start": "node client.js"
+  }
+}

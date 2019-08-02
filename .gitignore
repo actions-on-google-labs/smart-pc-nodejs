@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+# Project-specific files
+/firebase-setup.js
+/firebase.json
+/firestore.indexes.json
+/firestore.rules
+.firebaserc
+yarn.lock
+# Other configuration files
+/pc.config.json
+# Other files
+/yarn-error.log
+# Functions
+dist/
+# Keys
+service-account-key.json
